@@ -114,5 +114,6 @@ configure_file(
 
 add_custom_target(uninstall
     COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/CMakeUninstall.cmake)
-
+if (NOT BUILD_LIBS_ONLY)
 add_subdirectory(suite/fuzz)
+endif()
