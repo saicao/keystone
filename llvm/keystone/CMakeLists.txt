@@ -42,7 +42,7 @@ add_library(keystone
   ks.cpp
   EVMMapping.cpp
 )
-
+target_include_directories(keystone PUBLIC ../../include)
 install(TARGETS keystone DESTINATION lib${LLVM_LIBDIR_SUFFIX})
 
 set_target_properties(
