@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 2.8.7)
 
 set(LLVM_INSTALL_TOOLCHAIN_ONLY ON)
-
+set(CMAKE_CXX_STANDARD 11)
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   message(STATUS "No build type selected, default to Debug")
   set(CMAKE_BUILD_TYPE "Debug")
